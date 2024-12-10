@@ -13,6 +13,7 @@
     "eslint": "^9.16.0",
     "globals": "^15.13.0",
     "prettier": "3.4.2",
+    "sass-embedded": "^1.82.0",
     "stylelint": "^16.11.0",
     "stylelint-config-standard": "^36.0.1",
     "vite": "^6.0.1"

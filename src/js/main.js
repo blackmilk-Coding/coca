@@ -1,4 +1,4 @@
-import "../css/main.css"
+import "../scss/main.scss"
 import { foo, bar }  from "./counter.js";
 
 

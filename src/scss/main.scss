@@ -1,0 +1,8 @@
+@import './mixins/_index';
+
+header{
+  @include flex-all-center;
+  @include small-mobile{
+    color:red;
+  }
+}
