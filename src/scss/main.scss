@@ -1,5 +1,10 @@
 @import './mixins/_index';
+@import './base/_index';
+@import './globals/_index';
 
+body{
+  
+}
 header{
   @include flex-all-center;
   @include small-mobile{
