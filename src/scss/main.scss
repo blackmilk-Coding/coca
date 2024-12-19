@@ -2,11 +2,11 @@
 @import './base/_index';
 @import './globals/_index';
 
+/* components */
+@import './components/header.scss';
+
+// ------------
+
 body{
-  }
-header{
-  @include flex-all-center;
-  @include small-mobile{
-    color:red;
-  }
+  height: 200vh;
 }

@@ -1,6 +1,10 @@
 import "../scss/main.scss"
-import { foo, bar }  from "./counter.js";
 
 
-console.log(foo)
-bar();
+import { useTheme } from './components/theme.js';
+import { useBurger } from './components/burger.js';
+import { scrollHeader } from './components/scroll.js';
+
+scrollHeader();
+useTheme();
+useBurger();
