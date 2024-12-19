@@ -1,6 +1,9 @@
 .header {
+  position: static;
+  z-index: 1;
   width:100%;
   padding: 26px 0 22px;
+  background-color: inherit;
   @include mobile {
     padding: 22px 0 18px;
   }
@@ -174,7 +177,6 @@
   @include small-tablet {
     position: fixed;
     inset: 0;
-    z-index: var(--z-index-2);
     background-color: #000000b3;
     opacity: 0;
     visibility: hidden;
