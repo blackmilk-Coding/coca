@@ -1,13 +1,11 @@
 .header {
-  position: static;
   z-index: 1;
   width:100%;
   padding: 26px 0 22px;
-  background-color: inherit;
+
   @include mobile {
     padding: 22px 0 18px;
   }
-
   &__container{
     width: 100%;
     @include flex-all-between;
@@ -193,4 +191,10 @@
 
 .burger {
   @include burger;
+}
+
+
+.header--scroll{
+  position: fixed;
+  background-color: inherit;
 }

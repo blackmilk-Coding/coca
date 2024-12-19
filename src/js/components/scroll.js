@@ -1,22 +1,25 @@
 export const scrollHeader = () => {
-  const header = document.querySelector('.header')
-
+  const header = document.querySelector('header');
   let lastScroll = 0;
-  window.addEventListener('scroll', function () {
-    let currentScroll = this.pageYOffset
-    const scrollPosition = document.documentElement.scrollTop;
-    
- 
-      if (currentScroll < lastScroll) {
-        console.log(lastScroll)
-        header.style.position = "fixed"
-        header.style.backgroundColor = "inherit"
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll <= 0) {
+        if (header.classList.contains('header--scroll')) { 
+          header.classList.remove('header--scroll');
+        }
+        return;
       }
-    
 
-
-    lastScroll = currentScroll;
-
-  });
-  
-}
+      if (currentScroll > lastScroll) {
+        if (!header.classList.contains('header--scroll')) {
+          header.classList.add('header--scroll');
+        }
+      } else if (currentScroll < lastScroll) {
+        if (header.classList.contains('header--scroll')) {
+          header.classList.remove('header--scroll');
+        }
+      }
+      lastScroll = currentScroll;
+    });
+  }
