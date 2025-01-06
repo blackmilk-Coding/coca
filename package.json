@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "intl-tel-input": "^18.1.1",
-    "swiper": "^11.1.15"
+    "swiper": "^11.1.15",
+    "vite-plugin-html-inject": "^1.1.2"
   }
 }
