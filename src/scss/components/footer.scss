@@ -127,8 +127,9 @@
 
     @include mobile {
       gap: 40px 60px;
-      flex-wrap: wrap;
       justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
     }
 
     @include small-mobile {
@@ -150,36 +151,35 @@
         transform: rotate(90deg);
         position: absolute;
         top: 10%;
-        right:-3%;
-
+        right:2%;
         width:20px;
         height:20px;
       }
       @include mobile {
+        text-align: center;
         min-width: 143px;
-      }
-
-      @include small-mobile{
-        margin-bottom: 20px;
-
+        justify-content: center;
+        margin-bottom: 14px;
         svg{
           display: inline;
         }
       }
     }
-    @include small-mobile{
+    @include mobile{
+      width:50%;
+      min-width:200px;
       border:1px solid var(--primary-color-30);
       border-radius: 3px;
-      padding:10px;
+      padding:10px 10px;
     }
   }
-  @include small-mobile{
+  @include mobile{
     &__sublist{
+      text-align: center;
       transition: all .3s;
       opacity: 0;
       overflow: hidden;
       height:0;
-
 
     }
   }
