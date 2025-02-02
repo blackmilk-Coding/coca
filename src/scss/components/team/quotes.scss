@@ -1,0 +1,39 @@
+.quotes{
+  &-container{
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+
+
+    @include tablet{
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+  &__heading{
+    font-size: 52px;
+    max-width: 480px;
+    font-weight: 600;
+    line-height: 67.2px;
+
+    @include small-tablet{
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  &__text{
+    font-weight: 600;
+    line-height: 36px;
+    font-size: 24px;
+    max-width: 522px;
+
+    @include mini-desktop{
+      max-width: 500px;
+    }
+    @include mobile{
+      font-size: 20px;
+    }
+  }
+}
