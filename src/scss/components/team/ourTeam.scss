@@ -1,0 +1,16 @@
+.our-team{
+  &__text{
+    max-width: 653px;
+    margin-bottom: 80px;
+    &-heading{
+      margin-bottom: 24px;
+    }
+    &-p{
+      max-width: 534px;
+      font-weight: 500;
+      line-height: 32px;
+      font-size: 18px;
+      color:var(--neutral-color-150)
+    }
+  }
+}
