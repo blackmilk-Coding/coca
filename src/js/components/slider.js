@@ -107,3 +107,34 @@ export const useTeamSlider = () => {
     }
   });
 };
+export const useOurTeamSlider = () => {
+  new Swiper('.our-team-slider', {
+    modules: [Navigation, Pagination],
+    slidesPerView: "auto",
+    spaceBetween: 32,
+
+    dragSize:100,
+    pagination: {
+      el: '.our-team-slider_pagination',
+      clickable: true,
+    },
+
+    breakpoints:{
+      100:{
+        centeredSlides: true,
+      },
+      800:{
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+      1000:{
+        slidesPerView: 2,
+        centeredSlides: false,
+      },
+      1200:{
+        slidesPerView: 3,
+        spaceBetween: 32,
+      }
+    }
+  });
+};

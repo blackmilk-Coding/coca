@@ -7,6 +7,7 @@ import { useBurger } from './components/burger.js';
 import { useAccordion } from "./components/accordion.js";
 import {
   useTeamSlider,
+  useOurTeamSlider,
 } from './components/slider.js';
 
 
@@ -14,4 +15,5 @@ useTheme();
 useBurger();
 scrollHeader();
 useTeamSlider();
+useOurTeamSlider();
 useAccordion();
