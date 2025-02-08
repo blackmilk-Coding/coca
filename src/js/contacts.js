@@ -8,9 +8,6 @@ import { useAccordion } from "./components/accordion.js";
 import { usePhone } from './components/contacts/phone.js';
 import { useValidation } from "./components/contacts/formValid.js"
 
-import {
-  usePartnersSlider,
-} from './components/slider.js';
 
 
 
