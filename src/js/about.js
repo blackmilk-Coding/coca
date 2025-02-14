@@ -7,9 +7,11 @@ import { scrollHeader } from './components/scroll.js';
 import {
   useAboutHeroSlider,
 } from './components/slider.js';
+import { useAccordion } from "./components/accordion.js";
 
 
 scrollHeader();
 useTheme();
 useBurger();
 useAboutHeroSlider();
+useAccordion();
