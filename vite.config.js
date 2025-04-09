@@ -4,7 +4,7 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-  root: './src',
+  root: './src/',
   base: '/coca/',
   server: {
     port: 3000,
