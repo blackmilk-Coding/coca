@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  publicDir: './src/',
+  publicDir: './coca/src/assets',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
