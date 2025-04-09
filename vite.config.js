@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  publicDir: './src/assets',
+  publicDir: './src/',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
