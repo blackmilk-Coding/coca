@@ -1,9 +1,10 @@
-@import './mixins';
-@import './base';
-@import './globals';
+@import './mixins/_index';
+@import './base/_index';
+@import './globals/_index';
 
 // components
-@import './components/header';
-@import './components/about/hero';
-@import './components/about/articles';
-@import './components/footer';
+@import './components/header.scss';
+@import './components/about/hero.scss';
+@import './components/about/articles.scss';
+@import './components/about/blogSlider.scss';
+@import './components/footer.scss';

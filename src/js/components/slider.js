@@ -171,3 +171,34 @@ export const useAboutHeroSlider = () => {
     }
   });
 };
+
+export const blogSlider = () => {
+  new Swiper('.blog__slider', {
+    modules: [Navigation, Pagination],
+    slidesPerView: 1,
+    spaceBetween: 32,
+
+    dragSize:100,
+    pagination: {
+      el: '.hero__pagination',
+      clickable: true,
+    },
+
+    breakpoints:{
+      100:{
+        centeredSlides: true,
+      },
+      800:{
+        slidesPerView: 1.5,
+      },
+      1000:{
+        slidesPerView: 2,
+        centeredSlides: false,
+      },
+      1200:{
+        slidesPerView: 2.5,
+        spaceBetween: 32,
+      }
+    }
+  });
+}

@@ -1,3 +1,52 @@
 .blog{
   background-color: var(--neutral-color-100);
+  padding:120px;
+  margin-bottom: 160px;
+  @include mobile{
+    padding:60px;
+  }
+  @include small-mobile{
+    padding:30px;
+  }
+  &-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap:32px;
+    @include tablet{
+      grid-template-columns:none;
+      gap:60px;
+    }
+    &__article{
+      max-width: 584px;
+      &--lower{
+        align-self: end;
+      }
+    }
+    &__link{
+      display: block;
+      color: white;
+      font-size: 40px;
+      line-height: 48px;
+      margin:20px 0px;
+      @include small-tablet{
+        font-size: 28px;
+        line-height: 28px;
+      }
+
+      @include mobile{
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      @include small-mobile{
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__description{
+      color:var(--neutral-color-150);
+      max-width: 515px;
+    }
+  }
 }
