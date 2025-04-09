@@ -4,12 +4,12 @@ import { ViteMinifyPlugin } from 'vite-plugin-minify';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig({
-  root: './src',
-  base: '/coca/',
+  root: './src/',
+  base: '/',
   server: {
     port: 3000,
   },
-  publicDir: './src/',
+  publicDir: './src/assets',
   build: {
     outDir: '../dist',
     emptyOutDir: true,
