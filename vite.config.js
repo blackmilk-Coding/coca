@@ -20,6 +20,7 @@ export default defineConfig({
         contact: './src/contact.html',
         team: './src/team.html',
         about: './src/about.html',
+        blog: './src/blog.html',
       },
     },
   },
