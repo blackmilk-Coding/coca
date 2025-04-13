@@ -1,0 +1,123 @@
+.container--article{display: flex; justify-content: center;}
+.article{
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 160px;
+  max-width: 940px;
+  &-heading{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 120%;
+    letter-spacing: -3px;
+    max-width: 970px;
+    margin-bottom: 48px;
+    @include mobile{
+      font-size: 50px;
+    }
+    @include small-mobile{
+      font-size:30px;
+      letter-spacing: .2px;
+    }
+
+  }
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include mobile{
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &-name{
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &-job{
+      color:#afb3bb;
+    }
+
+    &-author{
+      display: flex;
+      gap:24px;
+      &__desc{
+        display: flex;
+        flex-direction: column;
+        gap:4px;
+      }
+    }
+    &-image{
+      border-radius: 100%;
+    }
+    &__description{
+      align-self: end;
+      @include mobile{
+        margin-top: 30px;
+      }
+    }
+  }
+  &__img{
+    margin-bottom: 80px;
+  }
+  &__text{
+    p{
+      margin-bottom: 56px;
+      font-size: 18px;
+      line-height: 32px;
+      letter-spacing: 0;
+    }
+    &-heading{
+      margin-bottom: 24px;
+      font-size: 40px;
+      line-height: 120%;
+      letter-spacing: 0;
+    }
+  }
+  &__testimonial{
+    display: flex;
+    gap:48px;
+    &-img{
+      @include mobile{
+        width:100%;
+      }
+    }
+    @include mobile{
+      flex-direction: column;
+    }
+    &-desc{
+      &__share{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:32px;
+        margin-bottom: 16px;
+        span{
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 26px;
+        }
+      }
+      &__author{
+        margin:16px 0;
+        display: flex;
+        flex-direction: column;
+        gap:16px;
+        &-name{
+          font-size: 32px;
+          line-height: 42px;
+        }
+        &-job{
+          font-weight: 400;
+          color:var(--neutral-color-70);
+        }
+        &-text{
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
